@@ -1,0 +1,5 @@
+[Slice]
+# MDS workaround: confine container threads to dedicated physical cores
+# (here: cores 10+11 = threads 10,11,22,23 on a 12c/24t box).
+# Pick your own cores with detect-topology.sh.
+AllowedCPUs=10 11 22 23
